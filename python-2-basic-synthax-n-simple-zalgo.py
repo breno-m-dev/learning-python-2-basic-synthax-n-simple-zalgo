@@ -6,7 +6,11 @@ zalgo = True
 if(zalgo==True):
     print('zalgo text will appear soon!')
 
-diacritics = ["^", "~", "'"]
+
+#\u0300 = grave `
+#\u302 = circumflex ^
+#\u303 = tilde ~
+diacritics = ["\u0300","\u0302", "\u0303" ]
 
 for diacritic in diacritics:
     the_str = the_str+diacritic
